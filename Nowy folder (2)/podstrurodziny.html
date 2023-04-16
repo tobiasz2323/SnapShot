@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="podstrony.css">
+    <title>SnapShot</title>
+</head>
+<body>
+    <a class="back" href="project.html">
+        <img  src="pobrany plik.png" alt="powrót">
+        </a>
+     
+    <div class="slideshow">
+        <img class="myslides" src="deva-williamson-ntfGWVbBiO0-unsplash.jpg" >
+        <img class="myslides" src="tim-zankert-gm3M-CsuynI-unsplash.jpg" >
+        <img class="myslides" src="bruce-tang-PH9ucxgjb-Y-unsplash.jpg">
+        <img class="myslides" src="jasmin-chew-LvuwrTKvX4I-unsplash.jpg" >
+        <img class="myslides" src="stories-ys8qztLjJyg-unsplash.jpg" >
+        <img class="myslides" src="kyle-head-WE-N1KDqEno-unsplash.jpg" >
+        <img class="myslides" src="jonathan-borba-sfOOhuw-K8w-unsplash.jpg" >
+        <img class="myslides" src="nathan-dumlao-As8zq82LBpw-unsplash.jpg" >
+        <img class="myslides" src="nathan-dumlao-Y-H5pu2oglE-unsplash.jpg" >
+    </div>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName('myslides')
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1}
+            x[slideIndex-1].style.display = 'block';
+            setTimeout(carousel, 500);
+        
+        }</script>
+</body>
+</html>
